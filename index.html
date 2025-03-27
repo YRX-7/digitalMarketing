@@ -1,0 +1,383 @@
+<!-- index.html  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fyle Marketing Agency</title>
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+     
+    <!-- jquery-3 -->
+    
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <!-- the given design doesnt have it so ..  -->
+    </header>
+
+    <main>
+        <!-- Hero Section  -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="text-content">
+                        <h5 class="highlight-text">Award Winning</h5>
+                        <h2 class="main-title">Digital Marketing Agency</h2>
+                        <p class="description">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+                        <button id="openFormBtn" class="btn hero-btn">Contact Us</button>
+                    </div>
+                    <div class="image-content">
+                        <img src="./assets/Hero/hero.png" alt="Hero Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Popup Form -->
+        <div id="popupForm" class="popup-form">
+            <div class="form-container">
+                <span class="close-btn" id="closeFormBtn">&times;</span>
+                <h2>Talk to us</h2>
+                <form id="submissionForm" action="YOUR_GETFORM_ENDPOINT" method="POST">
+                    <input class="input-field" type="email" id="email" name="email" placeholder="Work email" required>
+                    <div class="form-des">
+                        <input class="input-field" type="text" id="first-name" name="first-name" placeholder="First name" required>
+                        <input class="input-field" type="text" id="last-name" name="last-name" placeholder="Last name" required>
+                    </div>
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="checkbox" id="terms-checkbox" name="terms-checkbox" required>
+                        I agree to Fyle's terms and conditions, and provide consent to send me communication.
+                    </label>
+                    <button type="submit" style="padding: 10px 20px;
+                    font-size: 16px;
+                    cursor: pointer;" class="btn form-btn">Contact Us</button>
+                </form>
+            </div>
+        </div>
+        <!-- Services Section -->
+        <section class="services" style="padding-top: 100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="s-div">
+                            <div class="s-div-div1">
+                                <p class="s-div-title">What We Do</p>
+                            </div>
+                            <div class="s-div-div2">
+                                <div class="s-div-div2-div1">
+                                    <p class="s-div-div2-div1-title">Services Provided For You</p>
+                                </div>
+                                <div class="s-div-div2-div2">
+                                    <p class="s-div-div2-div2-text">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+                                </div>
+                            </div>
+                            <div class="max-container">
+                                <div class="slider-overflow">
+                                    <div class="slider-outer">
+                                        <div class="slider">
+                                            <!-- Slide 1 -->
+                                            <div class="slide">
+                                                <div class="slide-content">
+                                                    <img src="./assets/service/1.png" style="width: 278px; height: 426px; " alt="">
+                                                    <div class="hover-s" style="display: flex; flex-direction: column; align-items: center;">
+                                                        <img src="./assets/service/icon/icon.png" style="margin-top: 88px;" alt="">
+                                                        <h4 style="margin-top: 30px; color: white; text-transform: uppercase; font-family: 'Poppins';">web development</h4>
+                                                        <h6 style="text-align: center; margin-top: 18px; color: white;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</h6>
+                                                        <button id="hbtn" class="hero-btn" style="background-color: azure;">
+                                                            <p style="color: #FF3147; font-size: 16px; margin-top: 5px;">Read More &ThickSpace;</p> 
+                                                            <img src="./assets/service/arrow.png" style="margin-top: 15px;" alt="">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Repeat for other slides -->
+                                            <!-- Slide 2 -->
+                                            <div class="slide">
+                                                <div class="slide-content">
+                                                    <img src="./assets/service/2.png" style="width: 278px; height: 426px;" alt="">
+                                                    <div class="hover-s" style="display: flex; flex-direction: column; align-items: center;">
+                                                        <img src="./assets/service/icon/icon.png" style="margin-top: 88px;" alt="">
+                                                        <h4 style="margin-top: 30px; color: white; text-transform: uppercase; font-family: 'Poppins';">web development</h4>
+                                                        <h6 style="text-align: center; margin-top: 18px; color: white;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</h6>
+                                                        <button id="hbtn1" class="hero-btn" style="background-color: azure;">
+                                                            <p style="color: #FF3147; font-size: 16px; margin-top: 5px;">Read More &ThickSpace;</p> 
+                                                            <img src="./assets/service/arrow.png" style="margin-top: 15px;" alt="">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Slide 3 -->
+                                            <div class="slide">
+                                                <div class="slide-content">
+                                                    <img src="./assets/service/3.png" style="width: 278px; height: 426px;" alt="">
+                                                    <div class="hover-s" style="display: flex; flex-direction: column; align-items: center;">
+                                                        <img src="./assets/service/icon/icon.png" style="margin-top: 88px;" alt="">
+                                                        <h4 style="margin-top: 30px; color: white; text-transform: uppercase; font-family: 'Poppins';">web development</h4>
+                                                        <h6 style="text-align: center; margin-top: 18px; color: white;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</h6>
+                                                        <button id="hbtn2" class="hero-btn" style="background-color: azure;">
+                                                            <p style="color: #FF3147; font-size: 16px; margin-top: 5px;">Read More &ThickSpace;</p> 
+                                                            <img src="./assets/service/arrow.png" style="margin-top: 15px;" alt="">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Slide 4  -->
+                                            <div class="slide">
+                                                <div class="slide-content">
+                                                    <img src="./assets/service/4.jpg" style="width: 278px; height: 426px;" alt="">
+                                                    <div class="hover-s" style="display: flex; flex-direction: column; align-items: center;">
+                                                        <img src="./assets/service/icon/icon.png" style="margin-top: 88px;" alt="">
+                                                        <h4 style="margin-top: 30px; color: white; text-transform: uppercase; font-family: 'Poppins';">web development</h4>
+                                                        <h6 style="text-align: center; margin-top: 18px; color: white;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</h6>
+                                                        <button id="hbtn3" class="hero-btn" style="background-color: azure;">
+                                                            <p style="color: #FF3147; font-size: 16px; margin-top: 5px;">Read More &ThickSpace;</p> 
+                                                            <img src="./assets/service/arrow.png" style="margin-top: 15px;" alt="">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="slide">
+                                                <div class="slide-content">
+                                                    <img src="./assets/service/5.jpg" style="width: 278px; height: 426px;" alt="">
+                                                    <div class="hover-s" style="display: flex; flex-direction: column; align-items: center;">
+                                                        <img src="./assets/service/icon/icon.png" style="margin-top: 88px;" alt="">
+                                                        <h4 style="margin-top: 30px; color: white; text-transform: uppercase; font-family: 'Poppins';">web development</h4>
+                                                        <h6 style="text-align: center; margin-top: 18px; color: white;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</h6>
+                                                        <button id="hbtn4" class="hero-btn" style="background-color: azure;">
+                                                            <p style="color: #FF3147; font-size: 16px; margin-top: 5px;">Read More &ThickSpace;</p> 
+                                                            <img src="./assets/service/arrow.png" style="margin-top: 15px;" alt="">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- hidden slide for error handling  -->
+                                            <div class="slide">
+                                                <div class="slide-content">
+                                                    <img src="./assets/service/6.jpg" style="width: 278px; height: 426px;" alt="">
+                                                    <div class="hover-s" style="display: flex; flex-direction: column; align-items: center;">
+                                                        <img src="./assets/service/icon/icon.png" style="margin-top: 88px;" alt="">
+                                                        <h4 style="margin-top: 30px; color: white; text-transform: uppercase; font-family: 'Poppins';">web development</h4>
+                                                        <h6 style="text-align: center; margin-top: 18px; color: white;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</h6>
+                                                        <button class="hero-btn" style="background-color: azure;">
+                                                            <p style="color: #FF3147; font-size: 16px; margin-top: 5px;">Read More &ThickSpace;</p> 
+                                                            <img src="./assets/service/arrow.png" style="margin-top: 15px;" alt="">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="slide-content">
+                                                    <img src="./assets/service/7.jpg" style="width: 278px; height: 426px;" alt="">
+                                                    <div class="hover-s" style="display: flex; flex-direction: column; align-items: center;">
+                                                        <img src="./assets/service/icon/icon.png" class="hover-s-img"" alt="">
+                                                        <h4 class="hover-s-h4">web development</h4>
+                                                        <h6 class="hover-s-h6">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</h6>
+                                                        <button class="hero-btn" style="background-color: azure;">
+                                                            <p class="hero-btn-p">Read More &ThickSpace;</p> 
+                                                            <img src="./assets/service/arrow.png" class="hero-btn-img" alt="">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dots">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Why Choose Us Section -->
+        <section class="why" id="why">
+            <div class="container">
+                <div class="fe">
+                    <h4 class="fe-text">Why Choose Us</h4>
+                    <h2 class="fe-text2">Here's Why</h2>
+                    <div class="w-div">
+                        <!-- Cards go here -->
+                        <div class="">
+                            <div class="w-card">
+                                <div class="w-card-body">
+                                    <img src="./assets/why/1.svg" class="w-img1" alt="">
+                                    <h2 class="w-card-title">Clarified Vison & Target</h2>
+                                    <p class="w-card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="w-card">
+                                <div class="w-card-body">
+                                    <img src="./assets/why/2.svg" class="w-img1" alt="">
+                                    <h2 class="w-card-title">High Performance</h2>
+                                    <p class="w-card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="w-card">
+                                <div class="w-card-body">
+                                    <img src="./assets/why/3.svg" class="w-img1" alt="">
+                                    <h2 class="w-card-title">Maintain Security</h2>
+                                    <p class="w-card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="w-card">
+                                <div class="w-card-body">
+                                    <img src="./assets/why/4.svg" class="w-img1" alt="">
+                                    <h2 class="w-card-title">Better Strategy & Quality</h2>
+                                    <p class="w-card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Projects Section -->
+        <section id="project" class="project">
+            <div class="container">
+                <div class="fe">
+                    <h4 class="fe-text">Our Projects</h4>
+                    <h2 class="fe-text2">Why Are We Best</h2>
+                    <div class="p-div">
+                        <!-- Project details go here -->
+                        <img class="p-div-img" src="./assets/projects/img.jpg" alt="">
+                        <div class="p-div-div">
+                            <div class="p-div-div-div" id="img1">
+                                <div class="p-div-div-div-div">
+                                    <p class="p-div-div-div-div-title">TST Construction</p>
+                                    <h6 class="p-div-div-div-div-text">TST Construction reduces their reimbursement cycle from ~2 months to 20 days with Fyle</h6>
+                                </div>
+                                
+                            </div>
+                            <div class="p-div-div-div" id="img2">
+                                <div class="p-div-div-div-div">
+                                    <p class="p-div-div-div-div-title">3CX</p>
+                                    <h6 class="p-div-div-div-div-text">3CX simplifies employee expense management with Fyle</h6>
+                                </div>
+                                
+                            </div>
+                            <div class="p-div-div-div" id="img3">
+                                <div class="p-div-div-div-div">
+                                    <p class="p-div-div-div-div-title">Autochek</p>
+                                    <h6 class="p-div-div-div-div-text">How Autochek Africa automated policy compliance for easy expense management with Fyle</h6>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Growth Section -->
+        <section id="growth" class="growth">
+            <div class="container">
+                <div class="fe">
+                    <h4 class="fe-text">Expert Growth</h4>
+                    <h2 class="fe-text2">Our Company Growth</h2>
+                    <div class="g">
+                        <!-- Growth cards go here -->
+                        <div class="g-cards">
+                            <div class="">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="./assets/Growth/heart (2).svg" alt="">
+                                        <h2 class="card-title">199&ThinSpace;+</h2>
+                                        <p class="card-text">Satified Customers</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img class="card-image" src="./assets/Growth/clock (3).svg" alt="">
+                                        <h2 class="card-title">1591&ThinSpace;+</h2>
+                                        <p class="card-text">Days Of Operations</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="./assets/Growth/heart (2).svg" alt="">
+                                        <h2 class="card-title">199&ThinSpace;+</h2>
+                                        <p class="card-text">satified customers</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="./assets/Growth/heart (2).svg" alt="">
+                                        <h2 class="card-title">75&ThinSpace;+</h2>
+                                        <p class="card-text">Win Awards</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Feedback Section -->
+        <section id="feedback">
+            <div class="container">
+                <div class="fe">
+                    <h4 class="fe-text">Client Feedback</h4>
+                    <h2 class="fe-text2">People Say About Us!</h2>
+                    <div class="fe-div">
+                        <!-- Feedback content goes here -->
+                        <div class="fe-div"><p class="fe-div-text">Fyle has made it very convenient for us to see our expenses as soon as employees swipe their cards. We get to know almost right away when employees have missed a receipt with the real-time card feeds, instead of waiting for the bank statement to be uploaded at the end of the week.</p></div>
+                    <div class="fe-div2"><span class="fe-div2-span">Emma Riehlman &ThinSpace;</span><p class="fe-div2-p"> -  Accounts Payable</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer content goes here -->
+            <img class="fo" src="./assets/Footer/Group/Group.png" alt="">
+        </div>
+    </footer>
+
+    
+    
+</body>
+<script src="./js/jquery-3.7.1.min.js"></script>
+<script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+</html>
